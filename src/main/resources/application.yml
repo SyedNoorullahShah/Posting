@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/posting?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    username: root
+    password: bssjanuary21
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
